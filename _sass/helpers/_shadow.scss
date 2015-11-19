@@ -1,0 +1,17 @@
+$shadow-color: rgba(#333, 0.55);
+
+.shadow-standard {
+	box-shadow: 2px 2px 4px 1px $shadow-color;
+}
+
+@mixin shadow-standard {
+	@extend .shadow-standard;
+}
+
+.shadow-small {
+	box-shadow: 1px 1px 3px 0px $shadow-color;
+}
+
+@mixin shadow-small {
+	@extend .shadow-small;
+}

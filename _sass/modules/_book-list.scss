@@ -1,0 +1,77 @@
+.book-list {
+	margin-top: $spacing*4;
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 85%;
+	padding: $spacing/2 $spacing;
+	background-image: url(../img/textures/paper-crubmled.jpg);
+	background-size: cover;
+	transform: rotate(-1deg);
+	@include shadow-standard;
+	@include backface;
+
+	@include MQ(L) {
+		max-width: 880px;
+		padding: $spacing/2 $spacing*2;
+		transform: rotate(-1.5deg);
+	}
+
+}
+
+.book-list__title {
+	margin-bottom: 0;
+	font-size: ms(2);
+	font-family: $secondary-font;
+	text-align: center;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	color: $red;
+}
+
+
+.book-list ul {
+	margin-top: 0;
+	padding: 0;
+	list-style-type: none;
+	color: $blue;
+	font-size: ms(1);
+	font-family: $secondary-font;
+	opacity: 0.85;
+
+	@include MQ(L) {
+		columns: 2;
+		column-gap: $spacing/8;
+	}
+
+}
+
+.book-list li {
+
+	&:after {
+		display: inline-block;
+		height: 0.75rem;
+		width: 0.75rem;
+		margin-left: $spacing/6;
+		content: '';
+		background-image: url(../img/checkmark.svg);
+		background-size: 100%;
+		background-repeat: no-repeat;
+
+		@include MQ(L) {
+			height: 1.25rem;
+			width: 1.25rem;
+			margin-bottom: -5px;
+			margin-left: $spacing/8;
+		}
+
+	}
+
+	&.no-check:after {
+		display: none;
+	}
+}
+
+.book-list em {
+	font-style: normal;
+}
+

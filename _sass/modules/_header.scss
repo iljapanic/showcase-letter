@@ -1,0 +1,19 @@
+.header {
+	
+}
+
+@include MQ(M) {
+
+	.header__main {
+		width: 65%;
+		float: left;
+	}
+
+	.header__side {
+		width: 35%;
+		float: left;
+	}
+
+}
+
+

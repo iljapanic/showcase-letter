@@ -1,0 +1,186 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+
+    <!-- responsive meta -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0" />
+    
+    <!-- meta information -->
+    <title>Cover Letter</title>
+    <link rel="author" href="" />
+    <meta name="description" content="">
+    
+    <!-- Favicon -->
+    <link href="assets/img/favicon.png" rel="shortcut icon" type="image/png"/>
+    <link href="favicon.ico" rel="shortcut icon" type="image/x-icon"/>
+
+
+    <!-- TypeKit -->
+    <script src="https://use.typekit.net/xya8iux.js"></script>
+    <script>try{Typekit.load({ async: true });}catch(e){}</script>
+
+
+    <!-- stylesheets -->
+    <link rel="stylesheet" href="assets/css/screen.css">
+    
+</head>
+
+<body>
+
+
+    <!--[if lt IE 8]>
+        <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+    
+    <div class="container">
+        
+        <header class="header clearfix">
+            
+            <div class="header__main">
+                <div class="notebook">
+                    <img class="notebook__image" src="./assets/img/objects/notebook.png" alt="Notebook">
+                </div>
+            </div>
+
+            <div class="header__side">
+                <div class="cup">
+                    <img class="cup__image" src="./assets/img/objects/cup.png" alt="Coffee cup">
+                </div>
+                
+            </div>
+
+        </header>
+        
+
+        <main class="main clearfix" role="main">
+            
+            <div class="main__left">
+                &nbsp;
+            </div>
+
+
+            <div class="main__main">
+                <article class="letter">
+                    <div class="letter__inner">
+                        @@include('./texts/letter.html')
+                        <div class="signature">
+                            <img src="./assets/img/signature.png" alt="Ilja's signature">
+                        </div>
+                    </div>  
+                </article>
+            </div>
+
+            <div class="main__right">
+                &nbsp;
+            </div>
+            
+        </main>
+
+
+        <footer class="footer clearfix">
+            
+            <div class="footer__row clearfix">
+
+                <div class="footer__main">
+
+                    <div class="pen">
+                        <img class="pen__image" src="./assets/img/objects/pen.png" alt="Pen">
+                    </div>
+            
+                    <aside class="book-list" role="complementary">
+                        <div class="book-list__inner">
+                            <h2 class="book-list__title">Reading list</h2>
+                            @@include('./partials/book-list.html')
+                        </div>
+                    </aside>
+
+                </div>
+
+                <div class="footer__side">
+
+                   <a href="http://cv.iljapanic.me/" target="_blank" title="Check out my professional profile">
+                        <article class="portrait">
+                            <div class="portrait__photo">
+                                <img src="./assets/img/portrait.jpg">
+                            </div>
+                            <div class="portrait__caption">
+                                cv.iljapanic.me
+                            </div>
+                        </article>
+                    </a>
+
+                    <a href="http://iljapanic.github.io/panic-bachelor/" target="_blank" title="Read my bachelor project">
+                        <aside class="post-it" role="complementary">
+                            <div class="post-it__inner">
+                                Going Beyond HCI: Information design for knowledge-sharing platforms in the context of travel
+                            </div>
+                        </aside>
+                    </a>
+
+                </div>
+            <!-- .row -->
+            </div>
+            
+            <div class="footer__row clearfix">
+
+                <div class="footer__side">
+                    <aside class="meetups" role="complementary">
+                        <div class="meetups__inner">
+                            <h2 class="meetups__title">Favorite gatherings</h2>
+                            @@include('./partials/meetup-list.html')
+                        </div>
+                    </aside>   
+                </div>
+
+                <div class="footer__main">
+                    <aside class="reference" role="complementary">
+                        <div class="reference__inner">
+                            @@include('./texts/gordon-reference.html')
+                        </div>
+                    </aside>
+
+                   
+                </div>
+            <!-- .row -->
+            </div>
+            
+            <div class="footer__row">
+                
+                <div class="return">
+                    <div class="return__title">Return Address</div>
+                    <div class="return__body"><a href="mailto:hello@iljapanic.me">hello@iljapanic.me</a></div>
+                </div>
+
+                <div class="buds">
+                    <img class="buds__image" src="./assets/img/objects/buds.png" alt="Earbuds">
+                </div>
+            
+            <!-- .row -->
+            </div>
+        </footer>
+
+    <!-- .container -->
+    </div>
+    
+   
+
+    <!-- JavaScript -->
+    <script type="text/javascript" src="./assets/js/main.js"></script>
+
+    <!-- Google Analytics -->
+    <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+        ga('create', 'UA-43693985-8', 'auto');
+        ga('send', 'pageview');
+    </script>
+    
+</body>
+</html>

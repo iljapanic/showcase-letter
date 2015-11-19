@@ -1,0 +1,15 @@
+.pastry {
+	
+	display: none; // hide on mobile
+
+	@include MQ(M) {
+		position: absolute;
+		display: inline-block;
+		max-width: 12em;
+		top: 66.5%;
+		left: -2.5%;
+		transform: rotate(98deg);
+		@include backface;
+	}
+	
+}

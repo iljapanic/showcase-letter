@@ -1,0 +1,22 @@
+.footer {
+	
+}
+
+@include MQ(M) {
+
+	.footer__main {
+		width: 70%;
+		float: left;
+	}
+
+	.footer__side {
+		width: 30%;
+		float: left;
+	}
+
+	.footer__half {
+		width: 50%;
+		float: left;
+	}	
+
+}

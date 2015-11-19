@@ -1,0 +1,8 @@
+.container {
+	background-image: url(../img/textures/wood.png);
+	
+	@include retina {
+		background-image: url(../img/textures/wood@2x.png);
+	}
+}
+   

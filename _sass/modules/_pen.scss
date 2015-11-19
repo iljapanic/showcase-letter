@@ -1,0 +1,17 @@
+$pen-width: 220px;
+$pen-width-M: 440px;
+
+
+.pen {
+	max-width: $pen-width;
+	transform: rotate(2deg);
+	margin-left: auto;
+	margin-right: auto;
+
+	@include MQ(M) {
+		display: block;
+		max-width: $pen-width-M;
+		transform: rotate(2deg);
+		@include backface;
+	}
+}

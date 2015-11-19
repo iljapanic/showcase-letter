@@ -1,0 +1,56 @@
+.letter {
+	margin-bottom: $spacing*3;
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 95%;
+	background-image: url(../img/textures/paper-2.jpg);
+	background-size: 100%;
+	padding: $spacing $spacing*1.5;
+	position: relative;
+	z-index: 15;
+	@include shadow-standard;
+	@include backface;
+
+
+	
+	@include MQ(M) {
+		max-width: 75%;
+	}
+
+	@include MQ(L) {
+		max-width: 960px;
+		padding: $spacing $spacing*2;
+		transform: rotate(0.5deg);
+	}
+
+	
+}
+
+.letter h2 {
+	margin-top: $spacing*1.5;
+    font-size: ms(0);
+    text-transform: uppercase;
+    text-align: center; 
+}
+
+.letter ul {
+	padding: 0;
+	list-style-type: none;
+	font-size: ms(-1);
+
+	@include MQ(L) {
+		columns: 2;
+		column-gap: $spacing*2;
+	}
+
+}
+
+.signature {
+	text-align: right;
+	padding-right: $spacing*3;
+}
+
+.signature img {
+	max-width: 220px;
+	opacity: 0.85;
+}

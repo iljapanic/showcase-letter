@@ -1,0 +1,11 @@
+.phone {
+	display: none; // hide on mobile
+
+	@include MQ(M) {
+		display: inline-block;
+		position: absolute;
+		right: 0;
+		top: 35%;
+		max-width: 150px; 
+	}
+}

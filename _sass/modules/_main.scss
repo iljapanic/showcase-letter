@@ -1,0 +1,29 @@
+.main {
+	position: relative;
+	margin-top: $spacing*2;
+
+	@include MQ(M) {
+		margin-top: $spacing*4;
+	}
+}
+
+
+@include MQ(M) {
+
+	.main__main {
+		width: 70%;
+		float: left;
+	}
+
+	.main__left {
+		width: 15%;
+		float: left;
+	}
+
+	.main__right {
+		width: 15%;
+		float: left;
+	}	
+
+}
+

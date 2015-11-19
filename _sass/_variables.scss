@@ -1,0 +1,43 @@
+$green: #26A65B;
+$blue: #000F55;
+$purple: #9b59b6;
+$red: #C0392B;
+
+$brand-primary: #f8f8f2;
+$brand-secondary: $red;
+
+$brand-light: cs-primary();
+$brand-dark: shade($brand-light, 75);
+$brand-medium: shade($brand-light, 15%);
+$brand-dark-tint: tint($brand-dark, 35%); 
+
+
+
+
+
+// Modular scale (https://github.com/modularscale/modularscale-sass)
+$ms-base: 0.9em; // 16px
+$ms-ratio: $minor-third;
+
+// Base spacing
+$spacing: ms(1);
+$radius: 6px;
+
+// Media Queries
+$S: '(min-width:320px)';   
+$M: '(min-width:768px)';
+$L: '(min-width:1024px)';
+
+
+// Font fallbacks
+$sans-serif: Helvetica, Arial, "Lucida Grande", sans-serif; // sans-serif fallback
+$serif: Garamond, Georgia, serif; // serif fallback
+
+$primary-font: 'coronette';
+$secondary-font: 'verveine';
+
+// Font base
+$font-base: $primary-font, 'john-doe', 'Lato', $sans-serif;
+$font-header: $primary-font, 'john-doe', $serif;
+
+

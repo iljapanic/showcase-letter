@@ -1,0 +1,14 @@
+.stain {
+	display: none; // hide on mobile
+
+	@include MQ(M) {
+		margin-top: $spacing*2;
+		margin-left: auto;
+		margin-right: auto;
+		display: block;
+		max-width: 14em;
+		opacity: 0.75;
+	}
+}
+
+

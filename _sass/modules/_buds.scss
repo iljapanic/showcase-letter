@@ -1,0 +1,14 @@
+.buds {
+	display: block;
+	max-width: 16.5em;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: $spacing*2;
+
+
+	@include MQ(M) {
+		max-width: 22.5em;
+		margin-top: -$spacing*3;
+		margin-right: $spacing*5;
+	}
+}

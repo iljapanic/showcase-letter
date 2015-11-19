@@ -1,0 +1,35 @@
+.portrait {
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: $spacing*1.5;
+	display: block;
+	max-width: 130px;
+	padding: $spacing*0.75;
+	background-color: white;
+	transform: rotate(-4deg);
+	@include shadow-standard;
+	@include backface;
+	
+
+	@include MQ(L) {
+		margin-left: auto;
+		margin-right: auto;
+		margin-top: $spacing*2;
+		max-width: 12em;
+		padding: $spacing*0.75;
+	}
+
+}
+
+.portrait img {
+	opacity: 0.9;
+}
+
+.portrait__caption {
+	margin-top: $spacing/4;
+	font-family: $secondary-font;
+	font-size: ms(1);
+	text-align: center;
+	text-decoration: underline;
+	opacity: 0.85;
+}

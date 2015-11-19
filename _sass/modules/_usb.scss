@@ -1,0 +1,11 @@
+.usb {
+	display: none;
+
+	@include MQ(L) {
+		display: block;
+		position: absolute;
+		max-width: 9em;
+		right: 0;
+		top: 32.5%;
+	}
+}

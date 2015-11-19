@@ -1,0 +1,27 @@
+.reference {
+	margin-top: $spacing*2;
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 85%;
+	position: relative;
+	padding: $spacing $spacing;
+	background-image: url(../img/textures/paper-crumbled-2.jpg);
+	background-size: cover;
+	transform: rotate(-1deg);
+	@include shadow-standard;
+	@include backface;
+	
+	@include MQ(L) {
+		margin-top: $spacing*4;
+		max-width: 780px;
+		padding: $spacing $spacing*2;
+		transform: rotate(-2.5deg);
+	}
+
+
+}
+
+.reference__inner {
+	font-size: ms(0);
+	opacity: 0.85;
+}
