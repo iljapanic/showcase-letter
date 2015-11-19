@@ -2,6 +2,8 @@
 
 A cover letter made in "skeuomorphistic" style.
 
+Company specific information has been replaced with placeholder tags.
+
 
 ## Attributions
 
