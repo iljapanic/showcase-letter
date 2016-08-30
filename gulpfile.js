@@ -11,11 +11,11 @@ var requireDir = require('require-dir');
 var gulp = require('gulp');
 
 var autoprefixer = require('gulp-autoprefixer');
-var cmq = require('gulp-combine-media-queries');
+var gcmq = require('gulp-group-css-media-queries');
 var concat = require('gulp-concat');
 var fileinclude	= require('gulp-file-include');
 var markdown = require('gulp-markdown');
-var minifyCSS = require('gulp-minify-css');
+var minifyCSS = require('gulp-cssnano');
 var notify = require('gulp-notify');
 var order = require('gulp-order');
 var plumber = require('gulp-plumber');
@@ -26,7 +26,7 @@ var util = require('gulp-util');
 var watch = require('gulp-watch');
 
 
-    
+
 
 ////////////////////////
 // PROJECT VARIABLES //
@@ -83,7 +83,7 @@ gulp.task('browser-sync', function() {
 
 
 // 'sass'
-// 
+//
 //	- compiles SASS into CSS
 //	- creates SASS sourcemaps for easier debugging
 // 	- adds vendor prefixes
@@ -101,7 +101,7 @@ gulp.task('sass', function () {
 			browsers: ['last 2 versions'],
 			cascade: false
         }))
-        .pipe(cmq())
+        .pipe(gcmq())
 		.pipe(minifyCSS({keepSpecialComments: '0'}))
 		.pipe(gulp.dest(path.sassDir))
 		.pipe(browserSync.reload({stream:true}))
@@ -130,7 +130,7 @@ gulp.task('markdown', function() {
 //	- concats JS files based on building blocks in HTML
 
 gulp.task('html', function() {
-	
+
 	return gulp.src(path.htmlSrc)
 		.pipe(plumber())
   		.pipe(fileinclude())
